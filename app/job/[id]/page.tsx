@@ -40,25 +40,25 @@ const page = async ({ params }: DynamicProps) => {
                   <ul>
                     <li>
                       <div>
-                        <p>Employment Type:</p>
+                        <p>Employment Type :</p>
                         <span className="font-bold">{job.employmentType}</span>
                       </div>
                     </li>
                     <li className="mt-4">
                       <div>
-                        <p>Company:</p>
+                        <p>Company :</p>
                         <span className="font-bold">{job.author}</span>
                       </div>
                     </li>
                     <li className="mt-4">
                       <div>
-                        <p>Location:</p>
+                        <p>Location :</p>
                         <span className="font-bold">{job.location}</span>
                       </div>
                     </li>
                     <li className="mt-4">
                       <div>
-                        <p>Salary:</p>
+                        <p>Salary :</p>
                         <span className="font-bold capitalize">
                           {job.salary} per Month
                         </span>
@@ -67,14 +67,14 @@ const page = async ({ params }: DynamicProps) => {
                     <li className="mt-4">
                       <div>
                         <p>Contact :</p>
-                        <span className="font-bold capitalize">
-                          {job.contact} per Month
+                        <span className="font-bold">
+                          {job.contact}
                         </span>
                       </div>
                     </li>
                     <li className="mt-4">
                       <div>
-                        <p>Posted</p>
+                        <p>Posted : </p>
                         <span className="font-bold">{formattedPostedDate}</span>
                       </div>
                     </li>
@@ -85,7 +85,7 @@ const page = async ({ params }: DynamicProps) => {
           </div>
 
           <div className="lg:col-span-8 md:col-span-6">
-            <h5 className="text-lg font-semibold">Job Description:</h5>
+            <h5 className="text-lg font-semibold">Job Description :</h5>
             <p className="mt-4 text-slate-700">{job.description}</p>
 
             <div className="mt-4">
