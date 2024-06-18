@@ -11,8 +11,10 @@
   "dependencies": {
     "@edgestore/react": "^0.1.6",
     "@edgestore/server": "^0.1.6",
+    "@emailjs/browser": "^4.3.3",
     "@prisma/client": "^5.15.0",
     "clsx": "^2.1.1",
+    "emailjs": "^4.0.3",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
