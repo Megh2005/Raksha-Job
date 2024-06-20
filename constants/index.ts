@@ -3,5 +3,5 @@ export const navLinks = [
     { name: "Jobs", route: "#jobs" },
     { name: "About", route: "#about" },
     { name: "Contact", route: "/contact" },
-    { name: "Blogs", route: "/success" },
+    { name: "Chat", route: "/chat" },
 ];

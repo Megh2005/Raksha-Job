@@ -5,7 +5,6 @@ import Navbar from "@/components/shared/Navbar";
 import { EdgeStoreProvider } from "../lib/edgestore";
 import Footer from "@/components/shared/Footer";
 
-
 const raleway = Raleway({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
@@ -14,6 +13,10 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Raksha - Jobs",
   description: "The Woman Empowerment Portal",
+  icons: {
+    icon: "/raksha.png",
+    apple: "/raksha.png",
+  },
 };
 
 export default function RootLayout({
