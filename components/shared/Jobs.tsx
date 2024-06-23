@@ -15,7 +15,7 @@ const Jobs = () => {
   };
   return (
     <div id="jobs" className="py-10 w-full">
-      <div className="w-full text-center mb-10 text-2xl font-extrabold capitalize text-black">
+      <div className="w-full text-center mb-10 mx-7 text-2xl font-extrabold capitalize text-black">
         <h2 className="text-3xl">Available <span className="text-purple-700">Jobs</span> For You</h2>
       </div>
 
@@ -25,7 +25,7 @@ const Jobs = () => {
           <span className="text-lg capitalize">Check back later</span>
         </div>
       ) : (
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 max-h-[1400px] gap-10 w-[90%] mx-auto max-w-[1450px]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 max-h-[1400px] gap-10 w-[90%] mx-auto max-w-[1450px]">
           {filteredJobs.slice(0, visibleJobs).map((job) => (
             <JobCard key={job.id} job={job} />
           ))}

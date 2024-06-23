@@ -8,12 +8,9 @@ interface DynamicProps {
 }
 
 const getData = async (id: string) => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_APP_URL}/api/post/${id}/api/post/${id}`,
-    {
-      cache: "no-store",
-    }
-  );
+  const res = await fetch(`http://localhost:3000/api/post/${id}`, {
+    cache: "no-store",
+  });
 
   if (!res.ok) {
     throw new Error("Failed");
@@ -70,7 +67,9 @@ const page = async ({ params }: DynamicProps) => {
                     <li className="mt-4">
                       <div>
                         <p>Contact :</p>
-                        <span className="font-bold">{job.contact}</span>
+                        <span className="font-bold">
+                          {job.contact}
+                        </span>
                       </div>
                     </li>
                     <li className="mt-4">

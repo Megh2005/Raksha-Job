@@ -11,7 +11,7 @@ interface JobsCardProps {
 const JobCard = ({ job }: JobsCardProps) => {
   return (
     <Link href={`/job/${job.id}`}>
-      <div className="border w-[20rem] h-[17rem] p-3 font-bold rounded-md flex flex-col hover:bg-purple-600 outline-purple-600 outline transition duration-700 hover:text-white">
+      <div className="border w-[20rem] h-[17rem] p-3 font-bold rounded-md flex flex-col hover:bg-purple-600 outline-purple-600 outline transition duration-700 hover:text-white gap-6">
         <div className="flex flex-col gap-1 justify-between">
           <div className="gap-4">
             <Image
