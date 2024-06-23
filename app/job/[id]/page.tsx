@@ -8,7 +8,7 @@ interface DynamicProps {
 }
 
 const getData = async (id: string) => {
-  const res = await fetch(`http://localhost:3000/api/post/${id}`, {
+  const res = await fetch(`https://raksha-job.vercel.app/api/post/${id}`, {
     cache: "no-store",
   });
 
